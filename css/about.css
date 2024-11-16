@@ -1,0 +1,132 @@
+.about__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    margin-top: 75px;
+}
+
+.about__image img {
+    width: 100%;
+}
+
+.about__content h2 {
+    font-size: var(--fs_65);
+    font-weight: 600;
+    color: var(--sec__color);
+    letter-spacing: 3%;
+    margin-bottom: 15px;
+}
+
+.about__content p {
+    font-size: var(--fs_21);
+    color: var(--sec__color);
+    letter-spacing: 3%;
+    margin-bottom: 15px;
+}
+
+.skill h3 {
+    font-size: var(--fs_24);
+    color: var(--sec__color);
+    letter-spacing: 3%;
+}
+
+.skill .bar {
+    display: block;
+    height: 12px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #EDECEC;
+    margin-top: 18px;
+}
+
+.skill .bar .fill {
+    display: block;
+    height: 100%;
+    border-radius: 6px;
+    background-color: var(--primare__color);
+    position: relative;
+
+}
+
+.ux .fill {
+    width: 90%;
+}
+
+.wedsite {
+    margin-top: 15px;
+}
+
+.wedsite .fill {
+    width: 85%;
+}
+
+.app {
+    margin-top: 15px;
+}
+
+.app .fill {
+    width: 95%;
+}
+
+.graphic {
+    margin-top: 15px;
+}
+
+.graphic .fill {
+    width: 90%;
+}
+
+.skill .bar .fill .dot {
+    display: block;
+    height: 32px;
+    width: 32px;
+    border: 2px solid var(--primare__color);
+    border-radius: 50%;
+    background-color: #EDECEC;
+    position: absolute;
+    top: 0;
+    right: -3px;
+    transform: translateY(-40%);
+}
+
+
+
+@media (max-width:1290px) {
+    .about__container {
+        padding-inline: 40px;
+    }
+}
+
+@media (max-width:990px) {
+    .about__container {
+        flex-direction: column;
+
+    }
+
+}
+
+@media (max-width:800px) {
+    .about__content h2 {
+        text-align: center;
+    }
+
+    .about__content p {
+        text-align: center;
+    }
+
+    .about__content p br {
+        display: none;
+    }
+
+    .skill h3 {
+        font-size: var(--fs_18);
+        font-weight: 500;
+    }
+}
+
+@media (max-width:670px) {
+    .about__container {
+        padding-inline: 20px;
+    }
+}
